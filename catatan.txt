@@ -1,0 +1,61 @@
+Sejarah ReactJS
+-   FaxJS mulai dikembangkan di Facebook sekitar tahun 2010 untuk
+    menangani masalah update halaman feed/timeline di Facebook
+    tanpa harus refresh
+-   Tahun 2011, FaxJS diintegrasikan dengan XHP (pengembangan PHP di
+    Facebook), yang akhirnya dinamai ReactJS
+-   Tahun 2013, Facebook merilis ReactJS ke umum sebagai OpenSource
+    Tool pada saat JavaScript Conference
+-   Saat inni, ReactJS menjadi  salah satu Frontend framework yang palin
+    populer, dan orang banyak memanggilnya dengan ReactJS
+
+// Component
+
+- Saat belajar ReactJS, kita harus terbiasa dengan istilah Component
+- Component adalah kumpulan kode yang bisa digunakan secara independen
+- Component bisa berisikan satu atau lebih HTML Element, kode JavaScript dan
+  CSS
+- Tidak ada aturan harus seberapa kecil atau besar sebuah Component
+- Anggap saja seperti membuat Function, kita bisa membuat Funcion yang besar,
+  atau kecil, karena tujuan Fuction adalah agar bisa  digunakan secara
+  berulang - ulang, begitu juga tujuan dari Component
+- Struktur Component mirip seperti DOM(Document Object Model), Dimana kita
+  bisa membuat Component di dalam Component lain
+
+//JSX
+- React menggunakan JSX ketika Component
+- JSX (JavaScript XML atau JavaScript Syntax Extention), adalah
+  Kombinasi kode JavaScript dan XML (HTML), dimana kita bisa membuat
+  Component dengan mudah menggunakan kode  XML dan JavaScript dalam satu file
+- JSX diperkenalkan oleh Facebook di React, namun saat ini JSX sudah banyak
+  diadopsi oleh banyak framework JavaScript lainnya
+
+
+// Membuat Project
+- Untuk membuatproject React, kita akan menggunakan VIte sebagai
+  build tool nya
+- Kita bisa membuat project React menggunakan beberapa perintah
+- Langsung saja kunjungi website berikut ini https://vite.dev/guide/
+- Gunakan Build tool sesuai dengan yang kalian gunakan
+
+
+// BONUS WARNING
+
+ini ada sedikit eror ketika aku mencoba ngepush repo ini ke github yaitu :
+"Warning: in the working copy of'learn/.gitignore', LF will be replaced by CRLF the next GIT touchet it"
+
+ini yang aku dapatkan dari chatGPT :
+
+chatGPT : itu adalah warning dari GIT yangmemberitahukan bahwa  line ending (karakter penanda akhir baris)
+          oada file kamu akan diubah dari LF (Line Feed) menjadi CRLF (Carriage Return + LINE FEED)
+
+⏬ Penyebabnya
+- Sistem operasi Windows menggunakan CRLF sebagai line ending standar.
+- Sedangkan Linux/macOS menggunakan LF.
+- Git mendeteksi bahwa file kamu sebelumnya pakai LF (mungkin dibuat di linux, WSL, atau editor
+  yang default-nya LF),
+
+⏭️ Solusi :
+- Mengubah semua core file atau line ending di github secara defaultnya menjadi CRLF
+  Ketikan ini di terminal -> git config --global core.autocrlf true (Berlaku untuk semua repositori)
+
